@@ -1,0 +1,56 @@
+header h1{
+    font-size: 40pt;
+    text-transform: uppercase;
+    text-align: center;
+    color: blue;
+}
+nav{
+    font-size: 16 pt;
+    width: 150px;
+    float: left;
+}
+button{
+    position: relative;
+    padding: 20 px; 40px;
+    border: none;
+    font-size: 22px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    background-color: #3F4A83;
+    color: #D6D6D6;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+}
+button:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 3px;
+    width: 0;
+    background-color: #fff;
+    transition: all 0.25s ease-in-out;
+}
+button:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 0;
+    background-color: #fff;
+    transition: all 0.25s ease-in-out;
+}
+button:hover{
+    color: #fff;
+}
+button:hover::before, button:hover::after{
+    width: 100%;
+}
+nav a{
+    display: block;
+    margin: 52px 20px;
+}
+section{
+    margin-left: 170px;
+}

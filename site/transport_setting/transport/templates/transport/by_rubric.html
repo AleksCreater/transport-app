@@ -1,0 +1,13 @@
+{% extends 'layout/basic.html' %}
+{% block title %}{{ current_rubric.name }}{% endblock %}
+{% block content %}
+   <h2>Транспорт: {{ current_rubric.name }}</h2>
+   {% for bb in bbs %}
+   <div>
+       <p>{{ bb.user_name }}</p>
+       <p>{{ bb.user_surname }}</p>
+       <p>{{ bb.user_number }}</p>
+       <p>{{ bb.published|date:"d.m.Y H:i:s" }}</p>
+   </div>
+   {% endfor %}
+   {% endblock %}
